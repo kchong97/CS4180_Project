@@ -87,6 +87,7 @@ def histograms():
         ax = plt.gca()
         ax.axes.xaxis.set_visible(False)
         ax.axes.yaxis.set_visible(False)
+	# Replace limit with amount of images of a specific category
         plt.xlim(0, 600)
         plt.barh(x, width=y, color=col, height=1)
         plt.savefig("histograms/{}.png".format(key), bbox_inches='tight')
